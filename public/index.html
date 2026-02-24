@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Groq</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="chat-box">
+      <div class="chat-header">
+        <h1>Chat Groq</h1>
+        <p class="subtitle">Communiquez avec l'IA Groq</p>
+      </div>
+
+      <div class="messages-container" id="messagesContainer">
+        <div class="message assistant-message">
+          <div class="message-content">
+            Bonjour! Je suis l'assistant Groq. Comment puis-je vous aider?
+          </div>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <input
+          type="text"
+          id="messageInput"
+          class="message-input"
+          placeholder="Écrivez votre message..."
+          autocomplete="off"
+        >
+        <button id="sendBtn" class="send-button">
+          <span class="send-icon">➤</span>
+        </button>
+      </div>
+
+      <div class="loading-indicator" id="loadingIndicator" style="display: none;">
+        <div class="spinner"></div>
+        <p>Groq réfléchit...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
